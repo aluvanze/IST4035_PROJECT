@@ -1,194 +1,128 @@
-/* Reset some default styles */
 body, ul, li {
     margin: 0;
     padding: 0;
     list-style: none;
-}
-
-body {
     font-family: Arial, sans-serif;
 }
 
-/* Styling for the home page and layout*/
-
-#logo{
-    width: 7em;
-    height: 7em;
-    
+body {
+    line-height: 1.6;
 }
 
-h2{
-    text-align: center;
-    font-size: 5em;
-}
-
-#background{
-    background-image: url('moving2.jpg');
-    background-repeat: no-repeat;
-    background-attachment:fixed;  
-    background-size: 100%;
-    padding: 100px;
-}
-
-#textone{
-    font-size: 5em;
-    text-align: center;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    color: #0e4570;
-    text-shadow: 0 0 60px white;
-}
-
-#front{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 30%;
-    border-radius: 50%;
-    color: #111;
-}
-
-#tests{
-    width: 30%;
-    height: 10em;
-    float: left;
-    background-color: whitesmoke;
-    border-radius: 10%;
-    margin: 30px;
-}
-
-#tests p {
-    text-align: center;
-    color: #0e4570;
-}
-
-h3{
-    text-align: center;
-}
-
-#partners{
-    display: flex;
-    width: 100%;
-    height: 20em;
-    justify-content: space-evenly;
-
-}
-
-
-#benz{
-    width: 15em;
-    height: 15em;
-}
-#scania{
-    width: 15em;
-    height: 15em;
-}
-#bemis{
-    width: 30em;
-    height: 15em;
-}
-#westrock{
-    width: 15em;
-    height: 15em;
-}
-#access{
-    width: 15em;
-    height: 15em;
-}
-
-/* Style the nav */
 nav {
     width: 100%;
     background-color: #346f9c;
     padding: 10px 0;
 }
 
-/* Style the ul inside nav */
 nav ul {
     display: flex;
-    justify-content: space-around; /* Spread the navigation items */
+    justify-content: space-evenly;
     align-items: center;
 }
 
-/* Style the li inside ul */
 nav ul li {
-    margin: 0 15px;
+    margin: 0 5px;
 }
 
-/* Style the a inside li */
 nav ul li a {
     text-decoration: none;
     color: white;
     font-size: 20px;
     padding: 10px 15px;
     display: block;
-    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effects */
+    transition: background-color 0.3s, color 0.3s;
 }
 
-/* Hover effects for the links */
 nav ul li a:hover {
     background-color: #0e4570;
     color: #fff;
     border-radius: 5px;
 }
-/*css styling for the form on contact us*/
-form {
-    width: 50%;
-    margin: 40px auto;
-    background-color: #f9f9f9;
-    padding: 20px;
-    border: 1px solid #ccc;
-    
+
+#logo {
+    width: 7em;
+    height: 7em;
 }
 
-/*footer*/
+#background {
+    background-image: url('moving2.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+#front {
+    width: 30%;
+    border-radius: 50%;
+    margin-top: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 20px 10px white;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin: 20px 0;
+    color: #0e4570;
+}
+
+.testimonials-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.testimonials {
+    width: 45%;
+    max-width: 300px;
+    margin: 20px;
+    padding: 20px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.testimonials h3 {
+    margin-bottom: 10px;
+    color: #0e4570;
+}
+
+.testimonials p {
+    color: #333;
+}
+
+#partners-section {
+    text-align: center;
+    margin: 40px 0;
+}
+
+#partners {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+#partners img {
+    width: 15em;
+    height: auto;
+}
+
+#bemis {
+    width: 30em;
+}
+
 footer {
     text-align: center;
-    padding: 3px;
+    padding: 1px 0;
     background-color: #346f9c;
     color: white;
-    left: 0;
-  bottom: 0;
-  width: 100%;
-}
-
-/*contact us*/
-.container {
-    max-width: 600px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-h2 {
-    margin-top: 0;
-}
-label {
-    font-weight: bold;
-}
-input[type="text"],
-textarea {
+    position: static;
+    bottom: 0;
     width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-sizing: border-box;
-    resize: none;
-}
-textarea {
-    height: 150px;
-}
-input[type="submit"] {
-    background-color: #4caf50;
-    color: #fff;
-    border: none;
-    padding: 15px 20px;
-    font-size: 16px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-input[type="submit"]:hover {
-    background-color: #45a049;
 }
