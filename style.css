@@ -180,3 +180,105 @@ input[type="submit"]:hover {
     width: 7em;
     height: 7em;
 }
+
+
+.about {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.about1 {
+    background-color: #fff;
+    color: white;
+    padding: 1rem;
+}
+
+.about1 nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.about1 nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.about1 nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.blue-section {
+    background-color: #5680a0;
+    padding: 2rem;
+    flex: 1;
+}
+
+.moving-picture-section {
+    background-color: #fff;
+    padding: 2rem;
+    text-align: center;
+}
+
+.moving-picture img {
+    width: 100%;
+    max-width: 600px;
+    animation: shake 1s infinite;
+}
+
+@keyframes shake {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-10px);
+    }
+    75% {
+        transform: translateX(10px);
+    }
+}
+
+.about6 {
+    margin-bottom: 1rem;
+}
+
+.about6 label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.about6 input, .about6 textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.about6 button {
+    padding: 0.5rem 1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.about6 button:hover {
+    background-color: #0056b3;
+}
+
+.about8 {
+    background-color: #fff;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.quote {
+    font-style: italic;
+    margin-top: 1rem;
+}
