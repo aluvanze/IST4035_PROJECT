@@ -324,11 +324,7 @@ input[type="submit"]:hover {
 }
 
 /*footer*/
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
+
 
 footer {
     background-color: #346f9c;
