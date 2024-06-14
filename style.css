@@ -356,7 +356,9 @@ footer {
 }
 
 .social-media a:hover {
-    color: #ff0;
+    background-color: #0e4570;
+    color: #fff;
+    border-radius: 5px;
 }
 
 .social-media a:visited {
