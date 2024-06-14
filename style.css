@@ -19,6 +19,7 @@ nav ul {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 nav ul li {
@@ -126,6 +127,7 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
 /*contact us*/
 
 .container {
@@ -136,19 +138,21 @@ footer {
     border: 1px solid #161515;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center; /* Center align all content */
+    text-align: center; 
 }
 
 .logo-container {
-    margin-bottom: 20px; /* Add space between logo and other content */
+    margin-bottom: 20px; 
 }
 
 h2 {
     margin-top: 0;
 }
+
 label {
     font-weight: bold;
 }
+
 input[type="text"],
 textarea {
     width: 100%;
@@ -160,9 +164,11 @@ textarea {
     box-sizing: border-box;
     resize: none;
 }
+
 textarea {
     height: 150px;
 }
+
 input[type="submit"] {
     background-color: #4caf50;
     color: #fff;
@@ -172,15 +178,15 @@ input[type="submit"] {
     border-radius: 5px;
     cursor: pointer;
 }
+
 input[type="submit"]:hover {
     background-color: #45a049;
 }
+
 #logo2 {
-    
     width: 7em;
     height: 7em;
 }
-
 
 .about {
     display: flex;
@@ -325,7 +331,7 @@ body {
 }
 
 footer {
-    background-color:  #346f9c;
+    background-color: #346f9c;
     color: #fff;
     text-align: center;
     padding: 20px 0;
@@ -363,4 +369,53 @@ footer {
 
 .social-media a:visited {
     color: #ccc;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    .service {
+        width: 23%;
+    }
+}
+
+@media (max-width: 992px) {
+    #front {
+        width: 40%;
+    }
+    
+    .service {
+        width: 30%;
+    }
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+    
+    #front {
+        width: 50%;
+    }
+
+    .service {
+        width: 45%;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 576px) {
+    #front {
+        width: 60%;
+    }
+
+    .service {
+        width: 90%;
+    }
+    
+    h2 {
+        font-size: 1.8em;
+    }
 }
